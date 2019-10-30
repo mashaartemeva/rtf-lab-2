@@ -23,13 +23,13 @@ function sum (x) {
     
     let result = x;
     function getSum (nextX) {
-        
         if ( typeof(nextX) === 'undefined') return result;
         
         result += nextX;
         
         return getSum;
     }
+    
     return getSum;
 }
 
